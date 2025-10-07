@@ -3,6 +3,8 @@ import Presentation from "./components/Presentation";
 import { AboutMe } from "./components/AboutMe";
 import { Portfolio } from "./components/portafolio";
 import { Skills } from "./components/skills";
+import { Experience } from "./components/experience";
+import { Contact } from "./components/contact";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <AboutMe />
       <Portfolio />
       <Skills />
+      <Experience />
+      <Contact />
 
     </div>
   );

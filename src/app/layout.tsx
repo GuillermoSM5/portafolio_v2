@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
+// @ts-ignore
 import "./globals.css";
 import Header from "./components/Header";
 

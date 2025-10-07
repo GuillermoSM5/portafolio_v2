@@ -2,6 +2,7 @@ import Image from "next/image";
 import Presentation from "./components/Presentation";
 import { AboutMe } from "./components/AboutMe";
 import { Portfolio } from "./components/portafolio";
+import { Skills } from "./components/skills";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Presentation />
       <AboutMe />
       <Portfolio />
+      <Skills />
 
     </div>
   );

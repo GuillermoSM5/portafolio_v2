@@ -38,7 +38,7 @@ export const AboutMe = () => {
                         </div>
 
                         <div className="flex justify-center">
-                            <div className="w-80 h-80 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center bg-amber-300">
+                            <div className="w-80 h-80 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center">
                                 <img
                                     src="/placeholder.svg?height=300&width=300"
                                     alt="Professional headshot"

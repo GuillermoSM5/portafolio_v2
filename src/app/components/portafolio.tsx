@@ -1,4 +1,6 @@
+import { Button } from "./button"
 import { Card, CardContent, CardHeader, CardTitle } from "./card"
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const projects = [
     {
@@ -93,20 +95,22 @@ export function Portfolio() {
                                         ))}
                                     </div>
 
-                                    {/* <div className="flex gap-2 pt-2">
+                                    <div className="flex gap-2 pt-2">
                                         <Button size="sm" variant="outline" asChild>
                                             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                                                <ExternalLink className="w-3 h-3 mr-1" />
+                                                {/* <ExternalLink className="w-3 h-3 mr-1" /> */}
+                                                <FiExternalLink />
                                                 Live
                                             </a>
                                         </Button>
                                         <Button size="sm" variant="outline" asChild>
                                             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                                                <Github className="w-3 h-3 mr-1" />
+                                                {/* <Github className="w-3 h-3 mr-1" /> */}
+                                                <FiGithub />
                                                 Code
                                             </a>
                                         </Button>
-                                    </div> */}
+                                    </div>
                                 </CardContent>
                             </Card>
                         ))}

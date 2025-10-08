@@ -48,7 +48,7 @@ export function Experience() {
                                     {/* Timeline dot */}
                                     <div className="absolute left-2 md:left-1/2 md:transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg"></div>
 
-                                    <div className={`ml-12 md:ml-0 ${index % 2 === 0 ? "md:pr-1/2 md:mr-8" : "md:pl-1/2 md:ml-8"}`}>
+                                    <div className="ml-12 md:ml-0 bg-background" >
                                         <Card className="hover:shadow-lg transition-shadow duration-300">
                                             <CardHeader>
                                                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">

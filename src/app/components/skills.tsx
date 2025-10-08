@@ -1,42 +1,34 @@
 import { Card, CardContent } from "./card"
+import { SiFastapi, SiReact, SiNextdotjs, SiAngular, SiTailwindcss, SiSass, SiAntdesign, SiTypescript, SiJavascript, SiPython, SiHtml5 } from "react-icons/si";
 
 const skillCategories = [
     {
-        title: "Frontend Frameworks",
+        title: "Frameworks",
         skills: [
-            { name: "React", icon: "⚛️" },
-            { name: "Next.js", icon: "▲" },
-            { name: "Angular", icon: "🅰️" },
-            { name: "Vue.js", icon: "💚" },
+            { name: "Angular", icon: <SiAngular className="text-[#B52E31] text-xl" /> },
+            { name: "Next.js", icon: <SiNextdotjs className="text-xl" /> },
+            { name: "React", icon: <SiReact className="text-[#61DAFB] text-xl" /> },
+            { name: "FastApi", icon: <SiFastapi className="text-[#009688] text-xl" /> },
         ],
     },
     {
         title: "Styling & UI",
         skills: [
-            { name: "Tailwind CSS", icon: "🎨" },
-            { name: "Sass/SCSS", icon: "💅" },
-            { name: "Ant Design", icon: "🐜" },
-            { name: "Angular Material", icon: "📐" },
+            { name: "Tailwind CSS", icon: <SiTailwindcss className="text-[#06B6D4] text-xl" /> },
+            { name: "Sass/SCSS", icon: <SiSass className="text-[#CD6799] text-xl" /> },
+            { name: "Angular Material", icon: <SiAngular className="text-[#B52E31] text-xl" /> },
+            { name: "Ant Design", icon: <SiAntdesign className="text-[#1677FF] text-xl" /> },
         ],
     },
     {
         title: "Languages",
         skills: [
-            { name: "TypeScript", icon: "📘" },
-            { name: "JavaScript", icon: "📜" },
-            { name: "HTML5", icon: "🌐" },
-            { name: "CSS3", icon: "🎭" },
+            { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6] text-xl" /> },
+            { name: "JavaScript", icon: <SiJavascript className="text-[#F0DB4F] text-xl" /> },
+            { name: "HTML5", icon: <SiHtml5 className="text-[#E34F26] text-xl" /> },
+            { name: "Python", icon: <SiPython className="text-[#FFDE57] text-xl" /> },
         ],
-    },
-    {
-        title: "Tools & Technologies",
-        skills: [
-            { name: "Git", icon: "🔧" },
-            { name: "Webpack", icon: "📦" },
-            { name: "Vite", icon: "⚡" },
-            { name: "Node.js", icon: "🟢" },
-        ],
-    },
+    }
 ]
 
 export function Skills() {
@@ -48,7 +40,7 @@ export function Skills() {
                         Technical Skills
                     </h2>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {skillCategories.map((category, index) => (
                             <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                                 <CardContent className="p-6">
@@ -59,7 +51,7 @@ export function Skills() {
                                                 key={skillIndex}
                                                 className="flex items-center space-x-3 p-2 rounded-lg hover:bg-accent/10 transition-colors duration-200"
                                             >
-                                                <span className="text-xl">{skill.icon}</span>
+                                                {skill.icon}
                                                 <span className="text-muted-foreground font-medium">{skill.name}</span>
                                             </div>
                                         ))}

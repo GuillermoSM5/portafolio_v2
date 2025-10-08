@@ -6,11 +6,10 @@ import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "./card"
 import { Input } from "./input"
 import { Textarea } from "./textarea"
-// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-// import { Button } from "@/components/ui/button"
-// import { Input } from "@/components/ui/input"
-// import { Textarea } from "@/components/ui/textarea"
-// import { Mail, Github, Linkedin, Send } from "lucide-react"
+import { Button } from "./button"
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { IoSend } from "react-icons/io5";
 
 export function Contact() {
     const [formData, setFormData] = useState({
@@ -86,15 +85,15 @@ export function Contact() {
                                         />
                                     </div>
 
-                                    {/* <Button type="submit" className="w-full group">
-                                        <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                                    <Button type="submit" className="w-full group cursor-pointer">
+                                        <IoSend className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                                         Send Message
-                                    </Button> */}
+                                    </Button>
                                 </form>
                             </CardContent>
                         </Card>
 
-                        {/* Contact Info */}
+
                         <div className="space-y-8">
                             <Card>
                                 <CardContent className="p-8">
@@ -109,7 +108,7 @@ export function Contact() {
                                             href="mailto:your.email@example.com"
                                             className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-200"
                                         >
-                                            {/* <Mail className="w-5 h-5" /> */}
+                                            <IoMdMail className="text-xl" />
                                             <span>your.email@example.com</span>
                                         </a>
                                     </div>
@@ -121,21 +120,21 @@ export function Contact() {
                                 <CardContent className="p-8">
                                     <h3 className="font-montserrat font-bold text-xl text-foreground mb-4">Connect with me</h3>
                                     <div className="flex space-x-4">
-                                        {/* <Button variant="outline" size="icon" asChild>
+                                        <Button variant="outline" size="icon" asChild>
                                             <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-                                                <Linkedin className="w-4 h-4" />
+                                                <FaLinkedin className="text-xl" />
                                             </a>
                                         </Button>
                                         <Button variant="outline" size="icon" asChild>
                                             <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                                                <Github className="w-4 h-4" />
+                                                <FaGithub className="text-xl" />
                                             </a>
                                         </Button>
                                         <Button variant="outline" size="icon" asChild>
                                             <a href="mailto:your.email@example.com">
-                                                <Mail className="w-4 h-4" />
+                                                <IoMdMail className="text-xl" />
                                             </a>
-                                        </Button> */}
+                                        </Button>
                                     </div>
                                 </CardContent>
                             </Card>

@@ -3,7 +3,8 @@
 import { AiFillSun } from "react-icons/ai";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { Button } from "./button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useThemeDetector } from "../hooks/useThemeDetector";
 
 const navItems = [
     { href: "#about", label: "About" },
@@ -15,7 +16,18 @@ const navItems = [
 
 
 const Header = () => {
+    const theme = useThemeDetector();
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    useEffect(() => {
+        console.log(theme)
+
+        return () => {
+
+        }
+    }, [theme])
+
+
     return (
         <div className="border-b border-border bg-background/80 fixed top-0 w-full backdrop-blur-sm z-50">
             <div className=" m-auto container px-5 py-3 flex justify-between">

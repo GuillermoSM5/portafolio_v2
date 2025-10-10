@@ -1,6 +1,7 @@
 'use client'
 
 import { AiFillSun } from "react-icons/ai";
+import { FaMoon } from "react-icons/fa";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { Button } from "./button";
 import { useEffect, useState } from "react";
@@ -16,16 +17,30 @@ const navItems = [
 
 
 const Header = () => {
-    const theme = useThemeDetector();
+    const themeDefaul = useThemeDetector();
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+    const [theme, setTheme] = useState<string>("dark")
 
     useEffect(() => {
-        console.log(theme)
-
+        // setTheme(themeDefaul)
+        // applyTheme(themeDefaul)
         return () => {
 
         }
-    }, [theme])
+    }, [themeDefaul])
+
+    const toggleTheme = () => {
+        const newTheme = theme === "dark" ? "light" : "dark"
+        setTheme(newTheme)
+        // localStorage.setItem("theme", newTheme)
+        applyTheme(newTheme)
+    }
+
+    const applyTheme = (newTheme: string) => {
+        document.documentElement.classList.toggle("dark", newTheme === "dark")
+
+    }
 
 
     return (
@@ -46,8 +61,11 @@ const Header = () => {
                     }
                 </div>
                 <div className=" flex items-center">
-                    <div className="flex items-center p-3 rounded-xl hover:text-(--color-background) hover:bg-(--primary-color)   cursor-pointer">
-                        <AiFillSun className="text-lg" />
+                    <div className="flex items-center p-3 rounded-xl hover:text-(--color-background) hover:bg-(--primary-color)   cursor-pointer" onClick={toggleTheme}>
+                        {
+
+                            theme === 'light' ? <FaMoon className="text-lg" /> : <AiFillSun className="text-lg" />
+                        }
                     </div>
                     <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         {isMenuOpen ? <IoMdClose /> : <IoMdMenu />}

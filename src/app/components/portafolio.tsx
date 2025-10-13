@@ -13,33 +13,6 @@ const projects = [
         githubUrl: "#",
     },
     {
-        title: "Task Management App",
-        description:
-            "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-        image: "/placeholder.svg?height=300&width=400",
-        technologies: ["React", "TypeScript", "Ant Design", "Socket.io", "Node.js"],
-        liveUrl: "#",
-        githubUrl: "#",
-    },
-    {
-        title: "Analytics Dashboard",
-        description:
-            "Data visualization dashboard for business analytics with interactive charts, real-time data updates, and export functionality.",
-        image: "/placeholder.svg?height=300&width=400",
-        technologies: ["Angular", "Angular Material", "D3.js", "RxJS", "Firebase"],
-        liveUrl: "#",
-        githubUrl: "#",
-    },
-    {
-        title: "Social Media Platform",
-        description:
-            "Full-featured social media platform with user authentication, real-time messaging, and content sharing capabilities.",
-        image: "/placeholder.svg?height=300&width=400",
-        technologies: ["React", "Next.js", "Sass", "MongoDB", "Express.js"],
-        liveUrl: "#",
-        githubUrl: "#",
-    },
-    {
         title: "Portfolio Website",
         description:
             "Responsive portfolio website showcasing creative work with smooth animations, optimized performance, and SEO-friendly structure.",
@@ -48,15 +21,7 @@ const projects = [
         liveUrl: "#",
         githubUrl: "#",
     },
-    {
-        title: "Learning Management System",
-        description:
-            "Educational platform with course management, progress tracking, interactive quizzes, and student-teacher communication.",
-        image: "/placeholder.svg?height=300&width=400",
-        technologies: ["Angular", "TypeScript", "Angular Material", "Firebase", "WebRTC"],
-        liveUrl: "#",
-        githubUrl: "#",
-    },
+
 ]
 
 export function Portfolio() {

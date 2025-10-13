@@ -19,21 +19,13 @@ const navItems = [
 const Header = () => {
     const themeDefaul = useThemeDetector();
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [mounted, setMounted] = useState(false)
     const [theme, setTheme] = useState<string>("dark")
 
-    useEffect(() => {
-        // setTheme(themeDefaul)
-        // applyTheme(themeDefaul)
-        return () => {
 
-        }
-    }, [themeDefaul])
 
     const toggleTheme = () => {
         const newTheme = theme === "dark" ? "light" : "dark"
         setTheme(newTheme)
-        // localStorage.setItem("theme", newTheme)
         applyTheme(newTheme)
     }
 

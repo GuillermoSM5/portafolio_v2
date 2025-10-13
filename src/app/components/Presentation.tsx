@@ -15,7 +15,9 @@ const Presentation = () => {
                     <ButtonGsm />
                 </div>
                 <div className="absolute  bottom-[6rem]  md:bottom-[12rem] left-1/2 transform -translate-x-1/2 animate-bounce">
-                    <AiOutlineArrowDown className="h-6 w-6 text-muted-foreground" />
+                    <a href="#about">
+                        <AiOutlineArrowDown className="h-6 w-6 text-muted-foreground cursor-pointer" />
+                    </a>
                 </div>
             </div>
         </div>

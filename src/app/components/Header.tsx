@@ -4,8 +4,8 @@ import { AiFillSun } from "react-icons/ai";
 import { FaMoon } from "react-icons/fa";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { Button } from "./button";
-import { useEffect, useState } from "react";
-import { useThemeDetector } from "../hooks/useThemeDetector";
+import { useState } from "react";
+
 
 const navItems = [
     { href: "#about", label: "About" },
@@ -17,7 +17,7 @@ const navItems = [
 
 
 const Header = () => {
-    const themeDefaul = useThemeDetector();
+
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [theme, setTheme] = useState<string>("dark")
 

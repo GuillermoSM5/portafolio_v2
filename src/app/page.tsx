@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Presentation from "./components/Presentation";
 import { AboutMe } from "./components/AboutMe";
 import { Portfolio } from "./components/portafolio";

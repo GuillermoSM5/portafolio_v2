@@ -109,7 +109,7 @@ export function Contact() {
                                             className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-200"
                                         >
                                             <IoMdMail className="text-xl" />
-                                            <span>your.email@example.com</span>
+                                            <span>gsmarquez.dev@gmail.com</span>
                                         </a>
                                     </div>
                                 </CardContent>
@@ -121,17 +121,17 @@ export function Contact() {
                                     <h3 className="font-montserrat font-bold text-xl text-foreground mb-4">Connect with me</h3>
                                     <div className="flex space-x-4">
                                         <Button variant="outline" size="icon" asChild>
-                                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://www.linkedin.com/in/guillermosotomarquez5/" target="_blank" rel="noopener noreferrer">
                                                 <FaLinkedin className="text-xl" />
                                             </a>
                                         </Button>
                                         <Button variant="outline" size="icon" asChild>
-                                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://github.com/GuillermoSM5" target="_blank" rel="noopener noreferrer">
                                                 <FaGithub className="text-xl" />
                                             </a>
                                         </Button>
                                         <Button variant="outline" size="icon" asChild>
-                                            <a href="mailto:your.email@example.com">
+                                            <a href="mailto:gsmarquez.dev@gmail.com">
                                                 <IoMdMail className="text-xl" />
                                             </a>
                                         </Button>

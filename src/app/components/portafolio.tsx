@@ -4,20 +4,29 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const projects = [
     {
-        title: "E-Commerce Platform",
+        title: "Central Textilera",
         description:
             "Modern e-commerce solution built with Next.js, featuring real-time inventory, payment integration, and responsive design.",
-        image: "/placeholder.svg?height=300&width=400",
-        technologies: ["Next.js", "React", "Tailwind CSS", "Stripe", "PostgreSQL"],
-        liveUrl: "#",
+        image: "/ctx.png",
+        technologies: ["Next.js", "React", "Tailwind CSS"],
+        liveUrl: "https://centraltextilera.com/",
         githubUrl: "#",
     },
     {
         title: "Portfolio Website",
         description:
-            "Responsive portfolio website showcasing creative work with smooth animations, optimized performance, and SEO-friendly structure.",
-        image: "/placeholder.svg?height=300&width=400",
-        technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "MDX", "Vercel"],
+            "Responsive portfolio website showcasing creative work and SEO-friendly structure.",
+        image: "/gsm_site.png",
+        technologies: ["Next.js", "Tailwind CSS"],
+        liveUrl: "#",
+        githubUrl: "https://github.com/GuillermoSM5/portafolio_v2",
+    },
+    {
+        title: "Banorte Websites",
+        description:
+            "Various Internal Banorte SPA Portals",
+        image: "/banorte.avif",
+        technologies: ["Angular", "Angular Material", "React", "Ant Design", "TypeScript", "JavaScript"],
         liveUrl: "#",
         githubUrl: "#",
     },
@@ -61,18 +70,24 @@ export function Portfolio() {
                                     </div>
 
                                     <div className="flex gap-2 pt-2">
-                                        <Button size="sm" variant="outline" asChild>
-                                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                                                <FiExternalLink />
-                                                Live
-                                            </a>
-                                        </Button>
-                                        <Button size="sm" variant="outline" asChild>
-                                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                                                <FiGithub />
-                                                Code
-                                            </a>
-                                        </Button>
+                                        {
+                                            project.liveUrl !== "#" &&
+                                            <Button size="sm" variant="outline" asChild>
+                                                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                                                    <FiExternalLink />
+                                                    Live
+                                                </a>
+                                            </Button>
+                                        }
+                                        {
+                                            project.githubUrl !== "#" &&
+                                            <Button size="sm" variant="outline" asChild>
+                                                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                                                    <FiGithub />
+                                                    Code
+                                                </a>
+                                            </Button>
+                                        }
                                     </div>
                                 </CardContent>
                             </Card>

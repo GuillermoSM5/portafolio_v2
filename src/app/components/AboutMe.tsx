@@ -18,9 +18,8 @@ export const AboutMe = () => {
                                         I am writing to express my interest in the Front-End Developer position your company offers.
                                     </p>
                                     <p className="text-muted-foreground leading-relaxed mt-4">
-                                        I have over three years of experience in developing web applications, specializing in React,
-                                        Next.js, and Angular, as well as in implementing modern and responsive interfaces using Tailwind
-                                        CSS, Ant Design, Angular Material, CSS, and Sass.
+                                        I have over four years of experience in developing web applications, specializing in Angular,
+                                        Next.js,and React , as well as in implementing modern and responsive interfaces using Tailwind, Ant Design, Angular Material, CSS, and Sass.
                                     </p>
                                     <p className="text-muted-foreground leading-relaxed mt-4">
                                         In my current role at Stefanini (2021 – present), I have been involved in the development and
@@ -40,7 +39,7 @@ export const AboutMe = () => {
                         <div className="flex justify-center">
                             <div className="w-80 h-80 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center">
                                 <img
-                                    src="/placeholder.svg?height=300&width=300"
+                                    src="/gsm_dev.jpg"
                                     alt="Professional headshot"
                                     className="w-72 h-72 rounded-full object-cover border-4 border-background shadow-xl"
                                 />

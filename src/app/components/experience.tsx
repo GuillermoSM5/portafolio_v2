@@ -8,10 +8,8 @@ const experiences = [
         description:
             "Involved in the development and maintenance of large-scale projects, working closely with clients to ensure the delivery of solutions aligned with their needs. Led frontend architecture decisions and mentored junior developers.",
         achievements: [
-            "Developed and maintained 15+ large-scale web applications",
+            "Developed and maintained large-scale web applications",
             "Collaborated directly with clients to gather requirements and deliver tailored solutions",
-            "Improved application performance by 40% through code optimization",
-            "Led a team of 3 junior developers and conducted code reviews",
         ],
     },
     {
@@ -21,10 +19,7 @@ const experiences = [
         description:
             "Specialized in creating optimized interfaces and improving user experience, leveraging modern technologies and methodologies to achieve efficient results. Focused on responsive design and accessibility standards.",
         achievements: [
-            "Created responsive interfaces for 10+ client projects",
-            "Improved user experience metrics by 35% through UX optimization",
-            "Implemented accessibility standards achieving WCAG 2.1 AA compliance",
-            "Reduced page load times by 50% through performance optimization",
+            "Created responsive interfaces for different projects",
         ],
     },
 ]

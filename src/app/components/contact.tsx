@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import { ToastContainer, toast } from 'react-toastify'
 
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "./card"
@@ -18,11 +19,29 @@ export function Contact() {
         message: "",
     })
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [disable, setDisable] = useState(false)
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        // Handle form submission here
-        console.log("Form submitted:", formData)
-        // Reset form
+        setDisable(true)
+        await fetch('/api/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        }).then(() => {
+            setDisable(false)
+            toast.success("Enviado", {
+                autoClose: 4000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            })
+        })
         setFormData({ name: "", email: "", message: "" })
     }
 
@@ -85,7 +104,7 @@ export function Contact() {
                                         />
                                     </div>
 
-                                    <Button type="submit" className="w-full group cursor-pointer">
+                                    <Button type="submit" className="w-full group cursor-pointer" disabled={disable}>
                                         <IoSend className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                                         Send Message
                                     </Button>
@@ -130,7 +149,7 @@ export function Contact() {
                                                 <FaGithub className="text-xl" />
                                             </a>
                                         </Button>
-                                        <Button variant="outline" size="icon" asChild>
+                                        <Button variant="outline" size="icon" asChild >
                                             <a href="mailto:gsmarquez.dev@gmail.com">
                                                 <IoMdMail className="text-xl" />
                                             </a>
@@ -142,6 +161,7 @@ export function Contact() {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </section>
     )
 }

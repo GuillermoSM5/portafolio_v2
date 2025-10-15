@@ -16,6 +16,12 @@ const openSansFont = Open_Sans({
 export const metadata: Metadata = {
   title: "Guillermo Soto Marquez",
   description: "I'm a Frontend Developer. Dive into my portfolio featuring modern web apps, innovative UI design, and user-centric solutions",
+  openGraph: {
+    title: "Guillermo Soto Marquez",
+    description: "I'm a Frontend Developer. Dive into my portfolio featuring modern web apps, innovative UI design, and user-centric solutions",
+    images: ['https://res.cloudinary.com/dq5pco3vr/image/upload/v1760488266/gsm_dev_ukucp9.jpg']
+  }
+
 };
 
 export default function RootLayout({

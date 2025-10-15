@@ -18,7 +18,7 @@ const projects = [
             "Responsive portfolio website showcasing creative work and SEO-friendly structure.",
         image: "/gsm_site.png",
         technologies: ["Next.js", "Tailwind CSS"],
-        liveUrl: "#",
+        liveUrl: "https://guillermosotodev.vercel.app",
         githubUrl: "https://github.com/GuillermoSM5/portafolio_v2",
     },
     {
